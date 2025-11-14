@@ -1,0 +1,18 @@
+name: Deploy Ecocast Site App
+
+on:
+  push:
+    branches: [ main ]
+
+permissions:
+  id-token: write
+  contents: read
+
+jobs:
+  deploy:
+    uses: Projects-Kanyuy/infrastructure-npm/.github/workflows/reuseable-workflow.yaml@main
+    with:
+      aws_region: af-south-1
+    secrets:
+      aws_role_to_assume: ${{ secrets.OIDC_ROLE }}
+      repo_pat: ${{ secrets.REPO_PAT }}
