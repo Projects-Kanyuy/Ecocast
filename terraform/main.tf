@@ -135,3 +135,4 @@ resource "aws_s3_bucket_policy" "frontend_policy" {
   policy = data.aws_iam_policy_document.s3_policy.json
   depends_on = [aws_cloudfront_distribution.cdn]
 }
+ 
