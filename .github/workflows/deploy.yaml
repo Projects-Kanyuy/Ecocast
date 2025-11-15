@@ -1,4 +1,4 @@
-name: Deploy Ecocast Site Application
+name: Deploy Ecocast Site App
 
 on:
   push:
