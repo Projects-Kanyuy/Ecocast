@@ -10,7 +10,7 @@ permissions:
 
 jobs:
   deploy:
-    uses: Projects-Kanyuy/infrastructure-npm/.github/workflows/reuseable-workflow.yaml@v1
+    uses: Projects-Kanyuy/static-cicd/.github/workflows/cicd.yaml@main
     with:
       aws_region: af-south-1
     secrets:
