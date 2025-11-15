@@ -167,3 +167,6 @@ jobs:
 
       - name: Deployment complete
         run: echo "App available at https://${{ env.CLOUDFRONT_DOMAIN }}"
+
+      - name: Deployment complete
+        run: echo "✅ App available at $CLOUDFRONT_DOMAIN"
