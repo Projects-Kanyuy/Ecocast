@@ -70,10 +70,10 @@ jobs:
           terraform init
 
           echo "Running Terraform plan..."
-          terraform plan -no-color -var-file=ecostat.tfvars
+          terraform plan -no-color -var-file=ecocast.tfvars
 
           echo "Running Terraform apply..."
-          terraform apply -no-color -auto-approve -var-file=ecostat.tfvars
+          terraform apply -no-color -auto-approve -var-file=ecocast.tfvars
 
       - name: Get Terraform Outputs
         id: tf
