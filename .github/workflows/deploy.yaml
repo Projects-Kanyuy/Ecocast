@@ -77,7 +77,7 @@ jobs:
 
       - name: Get Terraform Outputs
         id: tf
-        working-directory: infrastructure-npm/terraform
+        working-directory: infrastructure/terraform
         run: |
           echo "bucket=$(terraform output -raw bucket_name)" >> $GITHUB_OUTPUT
           echo "dist_id=$(terraform output -raw cloudfront_distribution_id)" >> $GITHUB_OUTPUT
