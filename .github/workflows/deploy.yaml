@@ -10,7 +10,7 @@ permissions:
 
 jobs:
   deploy:
-    uses: Projects-Kanyuy/infrastructure-npm/blob/main/.github/workflows/reuseable-workflow.yaml
+    uses: Projects-Kanyuy/infrastructure-npm/.github/workflows/reuseable-workflow.yaml@v1
     with:
       aws_region: af-south-1
     secrets:
